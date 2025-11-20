@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">MyPortfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item">
+            <button id="themeToggle" class="btn btn-outline-light btn-sm ms-3">🌙 Dark Mode</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<header class="hero d-flex align-items-center">
+    <div class="container text-center text-white">
+        <h1 class="display-3 fw-bold fade-in">Creative Web Developer</h1>
+        <p class="lead fade-in delay-1">HTML • CSS • JavaScript • Bootstrap</p>
+        <button class="btn btn-primary btn-lg fade-in delay-2" onclick="showAlert()">Get Started</button>
+    </div>
+</header>
+
+
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">What I Do</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4 fade-in-up">
+                <div class="p-4 rounded shadow custom-card">
+                    <h4>Responsive Design</h4>
+                    <p>I create mobile-friendly, modern layouts using Bootstrap and custom CSS.</p>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in-up delay-1">
+                <div class="p-4 rounded shadow custom-card">
+                    <h4>UI/UX Design</h4>
+                    <p>Beautiful, modern designs that users enjoy interacting with.</p>
+                </div>
+            </div>
+            <div class="col-md-4 fade-in-up delay-2">
+                <div class="p-4 rounded shadow custom-card">
+                    <h4>Interactive Elements</h4>
+                    <p>JavaScript-powered animations and interactions that feel alive.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-center text-white py-3">
+    © 2025 My Portfolio | All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
